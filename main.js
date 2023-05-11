@@ -8,8 +8,8 @@ const messaggio = document.getElementById("numbers")
 // compongo il messaggio che compare all'inizio
 messaggio.innerHTML += `ricordati questi numeri: ${array}`;
 
-setTimeout (removeClass,29999);
-setTimeout (chiedereNumeri,30000)
+setTimeout (removeClass,2999);
+setTimeout (chiedereNumeri,3000)
 
 
 
@@ -41,7 +41,7 @@ function createNumRandomOrderArray(min, max) {
 // creo la funzione che fa scomparire i numeri
 var ArrayNumeriDati = []    
 function removeClass () {
-    messaggio.classList.add ("block");
+    messaggio.innerHTML = ``;
          
     }
 
@@ -55,13 +55,13 @@ function removeClass () {
         }
 
         if (array.toString() === ArrayNumeriDati.toString()) {
-            messaggio.classList.remove("block")
+           
             messaggio.innerHTML = `Congratulazioni hai vinto`;
             
         }
         
         else {
-            messaggio.classList.remove("block")
+            
             messaggio.innerHTML = `Mi dispiace hai perso`;
             
         }
